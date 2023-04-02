@@ -194,6 +194,20 @@ body {
 
 /* --------- ADVANTEGE ----------------------------------------- */
 
+.icon-box {
+  background: #f4f4fd;
+  border-radius: 4px;
+  max-width: 112px;
+  max-width: 264px;
+  padding: 24px 100px;
+  margin-bottom: 8px;
+}
+
+.icon-box>.icon {
+  width: 64px;
+  height: 64px;
+}
+
 .advantage-list {
   display: flex;
   gap: 24px;
