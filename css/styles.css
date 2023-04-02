@@ -2,6 +2,10 @@
   --main-hero-color: #2e2f42;
   --main-text-color: #434455;
   --main-background-color: #ffffff;
+  --color-btn-normal: #4d5ae5;
+  --color-btn-hover: #404bbf;
+  --color-icon-normal: #8e8f99;
+  --color-icon-hover: #404bbf;
 }
 
 p,
@@ -52,7 +56,7 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  /* outline: 2px solid red; */
+  outline: 2px solid red;
 }
 
 .section {
@@ -203,7 +207,7 @@ body {
   margin-bottom: 8px;
 }
 
-.icon-box>.icon {
+.icon-box > .icon {
   width: 64px;
   height: 64px;
 }
@@ -355,21 +359,22 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background-color: #4D5AE5;
+  /* background-color: #4d5ae5; */
+  background-color: var(--color-btn-normal);
   /* display: inline-block; */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.team-soc-link {
-  /* padding: 12px; */
+.team-soc-link:hover {
+  background-color: var(--color-btn-hover);
 }
 
 .team-soc-icon {
   width: 16px;
   height: 16px;
-  fill: #F4F4FD;
+  fill: #f4f4fd;
   /* fill: #ffffff; */
   /* fill: red */
 }
@@ -377,15 +382,64 @@ body {
 /* --------- CUSTOMERS --------------------------------------- */
 
 .containers {
+  background-color: var(--main-background-color);
 }
 .customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(40 / 36);
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 72px;
+  color: #2e2f42;
 }
+
 .customers-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .customers-item {
+  width: 168px;
+  height: 88px;
+  /* outline: 1px solid red; */
 }
-.castomers-link {
+
+.customers-link {
+  width: 100%;
+  height: 100%;
+  /* border: 1px solid #8e8f99; */
+  border: 1px solid var(--color-icon-normal);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.customers-icon {
+  width: 104px;
+  height: 56px;
+  /* fill: red; */
+  /* fill: #8e8f99; */
+  fill: var(--color-icon-normal);
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  /* border: 1px solid #404bbf; */
+  border: 1px solid var(--color-icon-hover);
+}
+
+/* .customers-icon:hover,
+.customers-icon:focus {
+  fill: #404bbf;
+} */
+.customers-link:hover>.customers-icon,
+.customers-link:focus>.customers-icon {
+  /* fill: #404bbf; */
+  fill: var(--color-icon-hover);
 }
 
 /* --------- FOOTER  ----------------------------------------- */
