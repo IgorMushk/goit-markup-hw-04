@@ -203,10 +203,13 @@ body {
 .icon-box {
   background: #f4f4fd;
   border-radius: 4px;
-  max-width: 112px;
-  max-width: 264px;
-  padding: 24px 100px;
+  height: 112px;
+  width: 264px;
+  /* padding: 24px 100px; */
   margin-bottom: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .icon-box > .icon {
